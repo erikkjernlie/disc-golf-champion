@@ -1,7 +1,3 @@
-### Case Assignment Glede
+# Disc Golf Champion
 
 
-### environment variables storage
-.env.local
-
-![screenshot](./screenshot.png)
