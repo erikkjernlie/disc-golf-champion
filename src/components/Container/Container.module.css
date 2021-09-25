@@ -1,0 +1,203 @@
+
+.white {
+  background-color: white;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.whiteFont {
+  color: white;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.greyFont {
+  color: grey;
+}
+
+.orangeFont {
+  color: orange;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smallPadding {
+  padding: 10px;
+}
+
+.mediumPadding {
+  padding: 20px;
+}
+
+.largePadding {
+  padding: 40px;
+}
+
+.pagePadding {
+  padding: 60px 50px;
+}
+
+.smallBorderRadius {
+  border-radius: 5px;
+}
+
+.mediumBorderRadius {
+  border-radius: 18px;
+}
+
+.largeBorderRadius {
+  border-radius: 20px;
+}
+
+.bottomSmallBorderRadius {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bottomMediumBorderRadius {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.bottomLargeBorderRadius {
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.container {
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shadow {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.smallMargin {
+  margin: 12px;
+}
+
+.mediumMargin {
+  margin: 48px;
+}
+
+.largeMargin {
+  margin: 72px;
+}
+
+.smallMaxWidth {
+  max-width: 250px;
+}
+
+.mediumMaxWidth {
+  max-width: 520px;
+}
+
+.largeMaxWidth {
+  max-width: 900px;
+}
+
+.xLargeMaxWidth {
+  max-width: 1400px;
+}
+
+.smallWidth {
+  width: 250px;
+}
+
+.mediumWidth {
+  width: 550px;
+}
+
+.largeWidth {
+  width: 900px;
+}
+
+.xLargeWidth {
+  width: 1400px;
+}
+
+.smallMarginBottom {
+  margin-bottom: 6px;
+}
+
+.mediumMarginBottom {
+  margin-bottom: 20px;
+}
+
+.largeMarginBottom {
+  margin-bottom: 30px;
+}
+
+.smallMarginRight {
+  margin-right: 6px;
+}
+.mediumMarginRight {
+  margin-right: 12px;
+}
+.largeMarginRight {
+  margin-right: 18px;
+}
+
+.smallPaddingLeft {
+  padding-left: 6px;
+}
+.mediumPaddingLeft {
+  padding-left: 12px;
+}
+.largePaddingLeft {
+  padding-left: 18px;
+}
+
+.smallMarginLeft {
+  margin-left: 6px;
+}
+.mediumMarginLeft {
+  margin-left: 12px;
+}
+.largeMarginLeft {
+  margin-left: 18px;
+}
+
+
+
+.smallMarginTop {
+  margin-top: 10px;
+}
+
+.mediumMarginTop {
+  margin-top: 20px;
+}
+
+.largeMarginTop {
+  margin-top: 30px;
+}
+
+.xlargeMarginTop {
+  margin-top: 45px;
+}
+
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+
+
+.positionRelative {
+  position: relative;
+}
