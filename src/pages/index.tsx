@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import { fetchData, putData } from "src/aws/aws";
 import Container from "src/components/Container/Container";
 
-export const PLAYERS = {
-  erik: "Erik",
-  kasper: "Kasper",
-  espen: "Espen",
-};
 
-export const DOCUMENTS = {
-  currentChampion: "currentChampion"
-}
 
 const Home = () => {
   const [tram, setTram] = useState("");

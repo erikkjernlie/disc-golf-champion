@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import { putData, updateChampion } from "src/aws/aws";
 import Container from "src/components/Container/Container";
 import { PLAYERS } from "src/constants/players";
+import animation from "public/static/animations/loading.json";
+import Lottie from "lottie-react";
 
 const Player = () => {
   const router = useRouter();
@@ -10,6 +12,7 @@ const Player = () => {
 
   useEffect(() => {
     const player: string = String(id).toLowerCase();
+    console.log("playe", player)
     console.log(
       "PLAYERS.indexOf(String(player)) > 0",
       PLAYERS.indexOf(player) >= 0
@@ -22,7 +25,7 @@ const Player = () => {
         });
       });
     }
-  }, []);
+  }, [id]);
   return (
     <Container
       center
@@ -30,7 +33,14 @@ const Player = () => {
         height: "100vh",
       }}
     >
-      Updating
+       <Lottie
+        animationData={animation}
+        style={{
+          width: "90vw",
+          height: "90vw",
+          maxWidth: 800
+        }}
+      />
     </Container>
   );
 };
