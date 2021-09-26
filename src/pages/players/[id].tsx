@@ -21,7 +21,7 @@ const Player = () => {
       console.log("idA", player);
       putData("users", player).then(() => {
         updateChampion("users", player).then(() => {
-          router.push("/players");
+          router.push("/");
         });
       });
     }
