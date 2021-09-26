@@ -8,16 +8,19 @@ Rules:
 
 
 ## Tech Stack
-This web app is built with React, NextJS, Amazon Web Services (DynamoDB) and hosted on Vercel. 
+This web app is built with React (TypeScript), NextJS, Amazon Web Services (DynamoDB) and hosted on Vercel. NextJS with SSR is preffered to get the optimal SEO, as many people are probably going to search for this app.
 
 DynamoDB is used directly from the client, as time-to-market has been a priority to deliver this web application to Kasper's birthday. In the future, this should be changed to the following solution to get a more secure, and scalable application:
 
 
 ![Desired architecture in the future](https://miro.medium.com/max/1390/1*9h2Xu-KQFa3E7rcuaT2UQA.png)
 
+A serverless backend solution is preferable for minimum setup, and avoid making updates to the database directly from the client. Amazon API Gateway can be used to setup the API endpoint which is deployed in an AWS lambda function. CRUD operations can then be implemented in the endpoint.
 
-
-
-### Conventions
-
-
+## Code conventions
+The following code conventions is desired, but not necessarily followed in this app:
+- No inline styling (use components such as _Container_ to get consistent styling)
+- Keep functions small and reusable
+- Keep API calls in seperate folders and make it as reusable as possible
+- Use arrow functions when possible
+- Create models for data structures
