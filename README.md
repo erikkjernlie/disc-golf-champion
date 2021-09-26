@@ -24,3 +24,6 @@ The following code conventions is desired, but not necessarily followed in this 
 - Keep API calls in seperate folders and make it as reusable as possible
 - Use arrow functions when possible
 - Create models for data structures
+
+## Deployment and hosting
+The site is automatically builded and hosted on the following url [https://disc-golf-champion.vercel.app/](https://disc-golf-champion.vercel.app/) when something is pushed to the main branch in GitHub. 
