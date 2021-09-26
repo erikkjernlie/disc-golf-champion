@@ -50,7 +50,7 @@ export const updateChampion = async (tableName: string, key: string) => {
   var params = {
     TableName: tableName,
     Key: {
-      name: "Champion",
+      name: "champion",
     },
     AttributeUpdates: {
       "currentChampion": {

@@ -1,9 +1,8 @@
 import "src/styles/globals.css";
 import React from "react";
 import App from "next/app";
-import { CssBaseline, ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from "@material-ui/core";
 
-import NavigationBar from "src/components/NavigationBar";
 import theme from "src/styles/theme";
 import * as AWS from "aws-sdk";
 import { ConfigurationOptions } from "aws-sdk";
@@ -30,10 +29,7 @@ class MyApp extends App<Props> {
 
     return (
       <ThemeProvider theme={theme}>
-        <CssBaseline>
-          <NavigationBar />
           <Component {...pageProps} />
-        </CssBaseline>
       </ThemeProvider>
     );
   }

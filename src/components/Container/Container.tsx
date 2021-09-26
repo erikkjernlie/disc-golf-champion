@@ -6,6 +6,7 @@ type PropTypes = {
   background?: "white" | "grey" | "orange" | null;
   fontColor?: "white" | "grey" | "orange" | null;
   center?: boolean | null;
+  flex?: boolean | null;
   padding?: "large" | "medium" | "small" | "page" | null;
   borderRadius?:
     | "large"
@@ -164,6 +165,7 @@ const Container: React.FC<PropTypes> = ({
   width,
   overflow,
   position,
+  flex,
   style,
 }: PropTypes) => {
   return (
@@ -192,6 +194,7 @@ const Container: React.FC<PropTypes> = ({
         width && widthClasses[width],
         overflow && overflowClasses[overflow],
         position && positionClasses[position],
+        flex && styles.flex
       ].join(" ")}
       style={style}
     >

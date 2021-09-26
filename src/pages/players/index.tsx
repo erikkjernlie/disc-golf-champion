@@ -1,8 +1,8 @@
-import { useRouter } from "next/dist/client/router";
 import React, { useEffect, useState } from "react";
-import { fetchData, putData } from "src/aws/aws";
-import { PLAYERS } from "..";
+import { fetchData } from "src/aws/aws";
+import Container from "src/components/Container/Container";
 import { User } from "src/models/client/userModel";
+import { parseName } from "utils/utils";
 const Players = () => {
   const [scores, setScores] = useState<User[]>([]);
   useEffect(() => {
@@ -10,17 +10,31 @@ const Players = () => {
   }, []);
   console.log("scores", scores);
   return (
-    <div>
-      {scores.length}
-      {scores.map((user) => (
-        <div style={{
-            display: "flex"
-        }}>
-          <div>{user.name}</div>
-          <div>{user?.score || user?.currentChampion}</div>
-        </div>
-      ))}
-    </div>
+    <Container
+      center
+      style={{
+        height: "100vh",
+      }}
+    >
+      {scores.find((item) => item.name === "champion")?.currentChampion}
+
+      <Container
+        flex
+        style={{
+          position: "absolute",
+          bottom: 0,
+        }}
+      >
+        {scores
+          .filter((item) => item.name !== "champion")
+          .map((user) => (
+            <Container key={user.name} flex marginRight="medium">
+              <Container marginRight="small">{parseName(user.name)}</Container>
+              <div>{user?.score}</div>
+            </Container>
+          ))}
+      </Container>
+    </Container>
   );
 };
 
