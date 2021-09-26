@@ -9,9 +9,9 @@ import * as AWS from "aws-sdk";
 import { ConfigurationOptions } from "aws-sdk";
 
 const configuration: ConfigurationOptions = {
-  region: "eu-west-2",
-  secretAccessKey: "ROFy76boxtT5lCkITpoteDUaFuvcAEh9NpJSrSQg",
-  accessKeyId: "AKIAVE77KF6DDYF6HAZE",
+  region: process.env.NEXT_PUBLIC_AWS_REGION,
+  secretAccessKey: process.env.NEXT_PUBLIC_AWS_SECRET_ACCESS_KEY,
+  accessKeyId: process.env.NEXT_PUBLIC_AWS_ACCESS_KEY_ID,
 };
 
 AWS.config.update(configuration);
@@ -29,13 +29,12 @@ class MyApp extends App<Props> {
     let { Component, pageProps } = this.props;
 
     return (
-
-        <ThemeProvider theme={theme}>
-          <CssBaseline>
-            <NavigationBar />
-            <Component {...pageProps} />
-          </CssBaseline>
-        </ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <CssBaseline>
+          <NavigationBar />
+          <Component {...pageProps} />
+        </CssBaseline>
+      </ThemeProvider>
     );
   }
 }
