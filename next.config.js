@@ -5,8 +5,5 @@ module.exports = {
   },
   publicRuntimeConfig: {
     // Will be available on both server and client
-    ruby: {
-      mapBoxApiKey: process.env.MAP_BOX_API_KEY,
-    },
   },
 };
