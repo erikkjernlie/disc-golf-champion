@@ -11,6 +11,8 @@ Rules:
 This web app is built with React, NextJS, Amazon Web Services (DynamoDB) and hosted on Vercel. 
 
 DynamoDB is used directly from the client, as time-to-market has been a priority to deliver this web application to Kasper's birthday. In the future, this should be changed to the following solution to get a more secure, and scalable application:
+
+
 ![Desired architecture in the future](https://miro.medium.com/max/1390/1*9h2Xu-KQFa3E7rcuaT2UQA.png)
 
 
