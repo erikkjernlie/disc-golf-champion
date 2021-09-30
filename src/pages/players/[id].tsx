@@ -31,6 +31,8 @@ const Player = () => {
       center
       style={{
         height: "100vh",
+        background: "#FFB32B"
+
       }}
     >
        <Lottie
@@ -38,7 +40,7 @@ const Player = () => {
         style={{
           width: "90vw",
           height: "90vw",
-          maxWidth: 800
+          maxWidth: 800,
         }}
       />
     </Container>
