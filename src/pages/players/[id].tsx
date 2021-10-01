@@ -18,9 +18,9 @@ const Player = () => {
       PLAYERS.indexOf(player) >= 0
     );
     if (PLAYERS.indexOf(player) >= 0) {
-      console.log("idA", player);
       putData("users", player).then(() => {
         updateChampion("users", player).then(() => {
+
           router.push("/");
         });
       });
